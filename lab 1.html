@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+	<html>
+		<head>
+			<script>
+			 function ask() {
+				var noun = "";
+				var verb = "";
+				var pronoun="";
+				noun = prompt("enter a noun first");
+				verb = prompt("enter a verb next");
+				pronoun = prompt("enter a pronoun last");
+				display(noun,verb,pronoun);
+				display(verb,pronoun,noun);
+				display(pronoun,noun,verb);
+				
+
+
+				
+
+			}
+			function display(one,two,three) {
+
+			alert(one + two + three);
+			
+
+
+
+
+			}
+			</script>
+		</head>
+		<body>
+			<input type = "button"
+			       value = "Madlibs"
+			       onclick = "ask();">
+		</body>
+			
+	</html>

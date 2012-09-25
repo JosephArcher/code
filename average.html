@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+	<HTML>
+	   <Head>
+	   <meta charset = "utf-8">
+	   <title> Finding the Average</title>
+ 	   <script type = "text/javascript">
+
+	   var totaldata = 0;
+	   var addtoo = 0;
+	   var classnumber= 0;
+	   var mean = 0;
+	   var sum;
+	
+
+		function findmean(){
+			
+		
+			classnumber = prompt("please enter the total frequency");
+			
+			for ( var counter =1; counter <= classnumber; ++counter){
+				addtoo =  prompt("Please Enter the next number");
+				sum = parseInt(addtoo);
+				totaldata = totaldata + sum;
+
+			}
+
+			mean = totaldata/classnumber;
+			alert(mean);
+			
+			
+		}
+
+		function findstddev(){
+		
+
+
+
+		}
+
+		function findmode(){
+		alert(mean);
+
+		}
+		
+		
+		
+
+		</script>
+	  </head>
+	  <body>
+		<input type = "button" 
+		       value = "click to find an mean"
+		       onclick = "findmean()">
+		<input type = "button"
+		       value = "click to find the mode"
+			onclick= "findmode()">
+		<input type = "button"
+			value = "click to find the standard deviation"
+			onclick ="findstddev()">
+		
+		
+
+
+	  </body>
+	</html>
